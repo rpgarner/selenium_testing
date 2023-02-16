@@ -1,0 +1,19 @@
+{
+  "name": "selenium_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpgarner/selenium_testing.git"
+  },
+  "author": "Ryan Garner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpgarner/selenium_testing/issues"
+  },
+  "homepage": "https://github.com/rpgarner/selenium_testing#readme"
+}
