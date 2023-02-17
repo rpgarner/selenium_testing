@@ -1,5 +1,5 @@
 # selenium_testing
-This is a selenium exercise, really my first one! The goal is to create two test to get started. 
+This is a selenium exercise. The goal is to create two test. 
 
 ![Testing pic](https://thumbs.dreamstime.com/z/software-testing-internet-business-technology-concept-143071525.jpg)
 
