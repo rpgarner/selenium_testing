@@ -24,13 +24,11 @@ await driver.findElement(By.linkText('Apply Now')).click()
 // // Wait for the alert to be displayed
 await driver.wait(until.alertIsPresent());
 
-driver.switchTo().alert().sendKeys("josiah+mobiletest@himaxwell.com");
-
 // // Store the alert in a variable
 let alert = await driver.switchTo().alert();
 
 // //Type your message
-await alert.sendKeys("Selenium");
+await alert.sendKeys("josiah+mobiletest@himaxwell.com");
 
 // //Press the OK button
 await alert.close();
