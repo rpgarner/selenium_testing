@@ -1,12 +1,12 @@
-const { switchTo, Builder, By, until} = require("selenium-webdriver");
+const { switchTo, Builder, By, until } = require("selenium-webdriver");
 
-async function Tests() {
+async function Test() {
   //////////////////launch Browser//////////////////
-            ///////// Safari /////////////
+  ///////// Safari /////////////
   let driver = await new Builder().forBrowser("safari").build();
   /////////////uncommet below for chrome ////////////////
   // const driver = new Builder().forBrowser('chrome').setChromeService(service).build();
-  
+
   // navigate to application
   await driver.get("https://snap.modernemortgage.com/home/mobile-test");
   //Test to run
@@ -17,23 +17,23 @@ async function Tests() {
     )
     .isDisplayed();
 
-    ////////////////////Test 2////////////////////
-        //Click the link to activate the alert
-await driver.findElement(By.linkText('Apply Now')).click()
+  ////////////////////Test 2////////////////////
+  //Click the link to activate the alert
+    await driver.findElement(By.linkText("Apply Now")).click();
 
-// // Wait for the alert to be displayed
-await driver.wait(until.alertIsPresent());
+  //   // // Wait for the alert to be displayed
+    await driver.wait(until.alertIsPresent());
 
-// // Store the alert in a variable
-let alert = await driver.switchTo().alert();
+  //   // // Store the alert in a variable
+    let alert = await driver.switchTo().alert();
 
-// //Type your message
-await alert.sendKeys("josiah+mobiletest@himaxwell.com");
+  //   // //Type your message
+    await alert.sendKeys("josiah+mobiletest@himaxwell.com");
 
-// //Press the OK button
-await alert.close();
+  //   // //Press the OK button
+    await alert.close();
 
-  //close browser
+  //   //close browser
 }
+Test();
 
-Tests();
