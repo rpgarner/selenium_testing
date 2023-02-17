@@ -1,4 +1,4 @@
-const { Builder, By, until } = require("selenium-webdriver");
+const { switchTo, Builder, By, until} = require("selenium-webdriver");
 
 async function Tests() {
   //////////////////launch Browser//////////////////
@@ -19,19 +19,21 @@ async function Tests() {
 
     ////////////////////Test 2////////////////////
         //Click the link to activate the alert
-await driver.findElement(By.linkText('Apply Now')).click();
+await driver.findElement(By.linkText('Apply Now')).click()
 
 // // Wait for the alert to be displayed
 await driver.wait(until.alertIsPresent());
 
+driver.switchTo().alert().sendKeys("josiah+mobiletest@himaxwell.com");
+
 // // Store the alert in a variable
-// let alert = await driver.switchTo().alert();
+let alert = await driver.switchTo().alert();
 
 // //Type your message
-// await alert.sendKeys("Selenium");
+await alert.sendKeys("Selenium");
 
 // //Press the OK button
-// await alert.accept();
+await alert.close();
 
   //close browser
 }
