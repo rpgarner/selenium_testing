@@ -3,6 +3,7 @@ This is a selenium exercise, really my first one! The goal is to create two test
 
 ![Testing pic](https://thumbs.dreamstime.com/z/software-testing-internet-business-technology-concept-143071525.jpg)
 
+Will be running test  this site:  https://snap.modernemortgage.com/home/mobile-test
 - Test 1: The page displays an email address for the Lender.
 - Test 2: After clicking the "Apply Now" button, the resulting page displays the same email address as in Test 1.
 
@@ -14,7 +15,12 @@ This is a selenium exercise, really my first one! The goal is to create two test
 safaridriver --enable
 ```
 #### Run test by put this in your ternimal
-`node index.js`
+```javascript
+node index.js
+```
+### Here is a short video recaping and demonstrating.
+
+- 
 
 
 #### Sources
